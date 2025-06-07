@@ -18,24 +18,16 @@ int isEmpty(Stack *stack) {
 }
 
 int push(Stack *stack, int value) {
-    if (isFull(stack)) {
-        return false;
-    }
+    // stack->top += 1;
     stack->data[++stack->top] = value;
     return true;
 }
 
 int pop(Stack *stack) {
-    if (isEmpty(stack)) {
-        return -1; // sentinel for underflow
-    }
     return stack->data[stack->top--];
 }
 
 int peek(Stack *stack) {
-    if (isEmpty(stack)) {
-        return -1; // sentinel for empty stack
-    }
     return stack->data[stack->top];
 }
 
