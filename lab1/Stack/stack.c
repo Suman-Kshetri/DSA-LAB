@@ -33,7 +33,7 @@ int peek(Stack *stack) {
 
 int main() {
     int choice, value;
-    Stack S = {.top = -1}; // Initialize stack
+    Stack S = {.top = -1};
 
     do {
         printf("1.PUSH \n2.POP \n3.PEEK \n4.IsFull \n5.IsEmpty \n6.EXIT\n");
